@@ -75,16 +75,28 @@ header img{
     height: 400px;
     background-image: url("assets/img/wallpaper--2.webp");
 }
+.wallpaper--text img
+{
+    width: 400px;
+    margin: 10px auto;
+}
 .wallpaper--text {
-    display: inline-block;    
-    margin-top: 150px;
+    background-color: rgba(255, 255, 255, 0.7);;
+    display: inline-block;       
+    margin-top: 130px;
     padding: 40px auto;
-    text-shadow: 2px 2px 5px rgb(85, 85, 85);
+    border-radius: 10px;
+    
+}
+.wallpaper--text span
+{
+    color: var(--soft-purple);
+    padding: 15px;
 }
 h1 span
 {
     font-size: 20px;
-    font-weight: 300;
+    font-weight: 500;
 }
 .demo
 {    
@@ -259,17 +271,15 @@ h1 span
 /*Slider*/
 
 .mySlides {
-    display:none;
-    display: inline-block;
 }
 .slider1{
-    height: 200px;
+    height: 300px;
     margin: 0 auto;
     background-color: var(--orange-ok);
 }
 .w3-content, .w3-display-container
 {
-    width: 50%;
+    width: 60%;
     height: 100px;
     margin: 0 auto;
 }
@@ -285,14 +295,14 @@ h1 span
 }
 .w3-display-left {
     position: absolute;
-    top: 50%;
+    top: 150%;
     left: 0%;
     transform: translate(0%,-50%);
     -ms-transform: translate(-0%,-50%);
 }
 .w3-display-right {
     position: absolute;
-    top: 50%;
+    top: 150%;
     right: 0%;
     transform: translate(0%,-50%);
     -ms-transform: translate(0%,-50%);
@@ -310,15 +320,48 @@ h1 span
     cursor: pointer;
     white-space: nowrap;
 }
+.slide1
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;    
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    border: 3px solid var(--orange-dark);
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.mySlides--slider-text
+{
+    width: 50%;
+    margin: 0 55px;
+    text-align: left;
+    font-size: 40px;
+}
 
+.mySlides--slider-img
+{
+    width: 50%;
+}
+.mySlides--slider-img img
+{
+    width: 70%;
+}
 /*Responsive*/
 @media only screen and (max-width: 799px) 
 {
     .wallpaper{
         height: 300px;
     }
+    .wallpaper--text img
+    {
+        width: 90%;
+    }
     .wallpaper--text {
-        margin-top: 90px;
+        margin: 50px auto;
+        width: 80%;
     }
 
     h1
