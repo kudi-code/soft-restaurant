@@ -269,11 +269,14 @@ h1 span
     font-size: 20px;
 }
 /*Slider*/
-
-.mySlides {
+.slider1 h2
+{
+    color: white;
+    font-size: 40px;
+    padding: 15px;
 }
 .slider1{
-    height: 300px;
+    height: 400px;
     margin: 0 auto;
     background-color: var(--orange-ok);
 }
@@ -291,7 +294,7 @@ h1 span
 }
 .w3-black, .w3-hover-black:hover {
     color: #fff !important;
-    background-color: #000 !important;
+    background-color: rgb(54, 54, 54) !important;
 }
 .w3-display-left {
     position: absolute;
@@ -328,8 +331,8 @@ h1 span
     width: 100%;
     height: 300px;
     background-color: white;
-    border: 3px solid var(--orange-dark);
-    border-radius: 15px;
+    border: 8px solid var(--orange-dark);
+    border-radius: 25px;
     justify-content: center;
     align-items: center;
 }
@@ -340,6 +343,10 @@ h1 span
     text-align: left;
     font-size: 40px;
 }
+.mySlides--slider-text span
+{    
+    font-size: 15px;
+}
 
 .mySlides--slider-img
 {
@@ -348,6 +355,7 @@ h1 span
 .mySlides--slider-img img
 {
     width: 70%;
+    box-shadow: 5px 5px 10px rgb(129, 129, 129);;
 }
 /*Responsive*/
 @media only screen and (max-width: 799px) 
