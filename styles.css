@@ -52,6 +52,7 @@ i
     font-size: 40px;
     text-align: center;
 }
+/*Header*/
 header
 {
     position: relative;
@@ -70,6 +71,7 @@ header img{
     display: inline-block;
     margin: 0 auto;
 }
+/*Wallpaper*/
 .wallpaper
 {
     height: 400px;
@@ -98,6 +100,7 @@ h1 span
     font-size: 20px;
     font-weight: 500;
 }
+/*Demo*/
 .demo
 {    
     width: 90%;
@@ -141,6 +144,12 @@ h1 span
     color: white;
     font-size: 18px;
 }
+.button1:hover, .button2:hover
+{
+    background-color: var(--soft-purple);
+    transition: 0.4s;
+}
+/*Video*/
 .video{
     display: flex;    
     justify-content: space-between;
@@ -357,6 +366,61 @@ h1 span
     width: 70%;
     box-shadow: 5px 5px 10px rgb(129, 129, 129);;
 }
+/*Why*/
+.why{
+    margin: 50px auto;
+    width: 100%;    
+}
+.why-div-cards
+{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.why h2
+{
+    color: var(--soft-purple);
+    padding: 30px;
+}
+.why--card
+{
+    display: inline-block;
+    background-color: var(--orange-ok);
+    border-radius: 10px;
+    width: 300px;
+    height: 350px;
+    padding: 25px 25px;
+    margin: 20px 40px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+.unusual-card i
+{
+    font-size: 30px;
+}
+.why--card:hover
+{
+    background-color: var(--soft-purple);
+    transition: 0.5s;
+}
+.why--card p
+{
+    font-weight: 300;
+    color: white;
+}
+.why--card i
+{
+    font-size: 60px;
+    line-height: 80px;
+}
+.why--card h3{
+    color: white;
+}
+
 /*Responsive*/
 @media only screen and (max-width: 799px) 
 {
