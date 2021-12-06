@@ -33,7 +33,7 @@ h1
 h2
 {
     color: black;
-    font-size: 30px;
+    font-size: 35px;
 }
 h3
 {
@@ -51,6 +51,15 @@ i
     color: white;
     font-size: 40px;
     text-align: center;
+}
+li
+{
+    color: black;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: left;
+    list-style: square inside url(assets/icons/Palomita-verde-II.webp);
+    list-style-type: style size;
 }
 /*Header*/
 header
@@ -150,29 +159,41 @@ h1 span
     transition: 0.4s;
 }
 /*Video*/
-.video{
-    display: flex;    
-    justify-content: space-between;
+.video--section{    
     padding-top: 30px;
     padding-bottom: 20px;
     background-color: var(--orange-ok);
     padding: 20px 80px;
 }
-.video--div h3
+.video
 {
-    font-size: 2.8rem;
+    display: flex;    
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.video--section h2
+{
     font-weight: 600;
     color: white; 
-    padding: 10px 10px; 
+    padding: 20px 10px; 
 }
-.video--div iframe
+
+.video--div
 {
-    width: 500px;
-    max-width: 560px;
-    height: calc(100vw * .5);
-    max-height: 315px;
-    padding: 20px;
+    margin: 0 auto;
+    width: 50%;
 }
+
+.video--div iframe {
+    display: inline-block;
+        margin: 0 auto;
+        width: 90%;
+        max-width: 560px;
+        height: calc(100vw * .5);
+        max-height: 315px;
+}
+
+
 .video--text, .video--text table
 {
     width: 70%;
@@ -199,20 +220,18 @@ h1 span
 }
 .video--text table
 {
-    table-layout: fixed;
-  width: 100%;
-  border-collapse: collapse;
-  border: 1px solid white;
+    display: inline-block;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 1em;
+    border: 1px solid white;
+    padding: 15px;
 }
 .video--text table tr
 {
     width: 50%;
+    padding: 50px;
     height: 120px;
-}
-
-.video--text table tr td
-{   
-    
 }
 .video--text table tr td p
 {
@@ -420,6 +439,79 @@ h1 span
 .why--card h3{
     color: white;
 }
+.price
+{
+    padding: 50px 0;
+    height: auto;
+    background-image: url(assets/img/wall-purple-II.webp);
+}
+.price h2{
+    color: white;
+}
+/*Slider2*/
+.w3-content2, .w3-display-container2
+{
+    width: 50%;
+    height: 800px;
+    margin: 0 auto;
+}
+.slide2
+{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;   
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border: 8px solid var(--orange-dark);
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.mySlides2--slider2-title
+{
+    width: 100%;
+    height: 120px;
+    margin: 30px;
+}
+.mySlides2--slider2-title h3
+{
+    font-size: 40px;
+}
+.mySlides2--slider2-title p, .mySlides2--slider2-title span{
+    text-align: center;
+    font-size: 40px;
+    line-height: 70px;
+    font-weight: 700;
+}
+.mySlides2--slider2-title .MXN
+{
+    font-size: 25px;
+}
+
+.mySlides2--slider2-text
+{
+    width: 40%;
+    margin: 0 55px;
+    text-align: left;
+    font-size: 40px;
+}
+.mySlides2--slider2-text span
+{    
+    font-size: 15px;
+}
+
+.mySlides2--slider2-img
+{
+    width: 40%;
+    margin-bottom: 15px;
+}
+.mySlides2--slider2-img img
+{
+    width: 70%;
+    box-shadow: 5px 5px 10px rgb(129, 129, 129);;
+}
 
 /*Responsive*/
 @media only screen and (max-width: 799px) 
@@ -435,11 +527,11 @@ h1 span
         margin: 50px auto;
         width: 80%;
     }
-
     h1
     {
         color: white;
         font-size: 40px;
+        text-shadow: (250, 248, 244, 0.161);
     }
     h1 span{
         line-height: 40px;
@@ -470,9 +562,15 @@ h1 span
         display: inline-block;
         margin: 0 auto;
     }
+    .video--div
+    {
+        margin: 0 auto;
+        width: 100%;
+    }
     .video--div iframe
     {
         display: inline-block;
+        margin: 0 auto;
         width: 90%;
         max-width: 560px;
         height: calc(100vw * .5);
