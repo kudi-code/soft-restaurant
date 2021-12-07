@@ -156,7 +156,11 @@ h1 span
 .button1:hover, .button2:hover
 {
     background-color: var(--soft-purple);
-    transition: 0.4s;
+    transition: 0.4s;    
+    cursor: pointer;        
+}
+a{
+    cursor: pointer;
 }
 /*Video*/
 .video--section{    
@@ -301,10 +305,11 @@ h1 span
 {
     color: white;
     font-size: 40px;
-    padding: 15px;
+    padding: 45px;
+
 }
 .slider1{
-    height: 400px;
+    height: 500px;
     margin: 0 auto;
     background-color: var(--orange-ok);
 }
@@ -392,7 +397,7 @@ h1 span
 }
 .why-div-cards
 {
-    width: 75%;
+    width: 85%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -411,8 +416,8 @@ h1 span
     border-radius: 10px;
     width: 300px;
     height: 350px;
-    padding: 25px 25px;
-    margin: 20px 40px;
+    padding: 25px 20px;
+    margin: 20px 22px;
     align-self: center;
     align-items: center;
     justify-content: center;
@@ -441,7 +446,7 @@ h1 span
 }
 .price
 {
-    padding: 50px 0;
+    padding: 100px 0;
     height: auto;
     background-image: url(assets/img/wall-purple-II.webp);
 }
@@ -452,7 +457,7 @@ h1 span
 .w3-content2, .w3-display-container2
 {
     width: 50%;
-    height: 800px;
+    height: 600px;
     margin: 0 auto;
 }
 .slide2
@@ -471,25 +476,48 @@ h1 span
 }
 .mySlides2--slider2-title
 {
+    flex-direction: row;
     width: 100%;
-    height: 120px;
-    margin: 30px;
+    height: auto;
+    margin: 20px;
 }
+/*Slider2, slide1*/
 .mySlides2--slider2-title h3
 {
-    font-size: 40px;
+    font-size: 45px;
+}
+.mySlides2--slider2-title h3 span
+{
+    font-size: 25px;
 }
 .mySlides2--slider2-title p, .mySlides2--slider2-title span{
     text-align: center;
     font-size: 40px;
-    line-height: 70px;
+    line-height: 40px;
     font-weight: 700;
+}
+.mySlides2--slider2-title .green
+{
+    color: green;
 }
 .mySlides2--slider2-title .MXN
 {
     font-size: 25px;
 }
-
+.mySlides2--slider2-title .IVA
+{
+    font-size: 20px;
+    color: #858585;
+}
+.mySlides2--slider2-title .Meses
+{
+    font-size: 20px;
+    color: green;
+}
+.mySlides2--slider2-title .promo
+{
+    font-size: 15px;
+}
 .mySlides2--slider2-text
 {
     width: 40%;
@@ -497,22 +525,113 @@ h1 span
     text-align: left;
     font-size: 40px;
 }
-.mySlides2--slider2-text span
+.mySlides2--slider2-text ul li span
+{    
+    color: var(--orange-ok);
+    font-weight: 700;
+}
+.mySlides2--slider2-text2 ul li .mini
 {    
     font-size: 15px;
 }
+/*Slider 2,slide 2*/
+.mySlides2--slider2-title .orange
+{
+    color: var(--orange-ok);
+    
+}
+.mySlides2--slider2-text ul li .green
+{
+    color: green;
+    font-weight: 700;
+}
 
-.mySlides2--slider2-img
+.mySlides2--slider2-text2
 {
     width: 40%;
     margin-bottom: 15px;
 }
-.mySlides2--slider2-img img
+
+.w3-display-left2 {
+    position: absolute;
+    left: 25%;
+    transform: translateY(-320px);
+}
+.w3-display-right2 {
+    position: absolute;
+    right: 25%;
+    transform: translateY(-320px);
+}
+/*Form and Footer*/
+.form
 {
-    width: 70%;
-    box-shadow: 5px 5px 10px rgb(129, 129, 129);;
+    margin: 0 auto;
+    background-color: var(--orange-light);
+}
+.footer-image
+{
+    background-color: var(--orange-light);
 }
 
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #005bb9;
+    text-align: center;
+    margin: 0 auto;;
+}
+.footer-decoration {
+    position: relative;
+    top: 0px;
+    display: block;
+    width: 100%;
+    z-index: 1;
+}
+.footer--table
+{
+    
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+footer table
+{
+    color: white;
+    margin: 0 auto;
+}
+.footer--softpaq
+{
+    width: 200px;
+    height: auto;
+    display: inline-block;
+    padding-right: 15px;
+}
+.footer--table--icons
+{
+    display: inline-block;
+    margin: 0 auto;
+}
+.footer--fb-icon
+{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+.footer--table--footer 
+{
+    line-height: 25px;
+    color: white
+}
+.footer--table--footer a
+{
+    color: white;
+}
+.footer--table--footer h3
+{
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 35px;
+}
 /*Responsive*/
 @media only screen and (max-width: 799px) 
 {
