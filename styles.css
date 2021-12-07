@@ -727,8 +727,60 @@ footer table
     }
     .functions--cards--card1, .functions--cards--card2, .functions--cards--card3, .functions--cards--card4, .functions--cards--card5, .functions--cards--card6
     {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px auto;
         max-width: 400px;
-    }    
+    }
+    .why-div-cards
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        overflow-x: scroll;
+        margin: 20px auto;
+    }
+    .why--card
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 30px;
+        height: 350px;
+        flex-shrink: .8;
+        border-radius: 20px;
+    }
+    .why--card p, .why--card i, .why--card h3
+    {
+        padding: 10px;
+        width: 280px;
+        
+    }
+    .why-div-cards
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .slider1
+    {
+        height: 630px;
+    }
+    .slide1{
+        height: 400px;
+    }
+    .w3-content , .w3-display-container
+    {
+        width: 100%;
+    }
+    .mySlides--slider-text
+    {
+        width: 80%;
+        margin: 0 15px;
+    }
+    .w3-display-left {
+        top: 200%;
+    }
+    .w3-display-right {
+        top: 200%;
+    }
 }
