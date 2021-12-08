@@ -684,6 +684,11 @@ footer table
     {
         display: inline-block;
         margin: 0 auto;
+        width: 95%;
+    }
+    .video--section
+    {
+        padding: 20px 0px;
     }
     .video--div
     {
@@ -826,10 +831,10 @@ footer table
  {
     .slider1
     {
-        height: 700px;
+        height: 750px;
     }
     .slide1{
-        height: 450px;
+        height: 550px;
     }
     .w3-content , .w3-display-container
     {
@@ -841,10 +846,10 @@ footer table
         margin: 0 15px;
     }
     .w3-display-left {
-        top: 200%;
+        top: 250%;
     }
     .w3-display-right {
-        top: 200%;
+        top: 250%;
     }
     .slide2
     {
