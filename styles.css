@@ -609,7 +609,8 @@ footer table
     width: 200px;
     height: auto;
     display: inline-block;
-    padding-right: 15px;
+    margin: 0 auto;
+    padding-left: 35px;
 }
 .footer--table--icons
 {
@@ -634,7 +635,7 @@ footer table
 .footer--table--footer h3
 {
     font-weight: 500;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 35px;
 }
 /*Responsive*/
@@ -825,6 +826,14 @@ footer table
         left: 0%;
         transform: translateY(-320px);
     }
+    li {
+        color: black;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: left;
+        list-style: square inside url(assets/icons/Palomita-verde-II.webp);
+        list-style-type: style size;
+      }
 }
 /* Tablet */
 @media only screen and (max-width: 1218px) 
