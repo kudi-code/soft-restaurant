@@ -29,6 +29,7 @@ h1
 {
     color: white;
     font-size: 40px;
+    font-weight: 500;
 }
 h2
 {
@@ -92,7 +93,7 @@ header img{
     margin: 10px auto;
 }
 .wallpaper--text {
-    background-color: rgba(255, 255, 255, .9);
+    /*background-color: rgba(255, 255, 255, .9);*/
     display: inline-block;   
     margin-top: 120px;
     padding: 15px 5px;
@@ -102,16 +103,16 @@ header img{
 .wallpaper--text span
 {
     display: initial;
-    color: var(--soft-purple);
      padding: 15px;
+     color: white;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    text-shadow: 2px 2px 6px black
     /*text-shadow: 2px 2px 6px white;
     background-color: white; */
-}
-h1 span
-{
-    font-size: 20px;
-    font-weight: 500;
-}
+}  
+
 /*Demo*/
 .demo
 {    
@@ -121,6 +122,11 @@ h1 span
     overflow-x: hidden;
     margin: 50px auto;
     justify-content: center;
+}
+.wallpaper--text--img
+{
+    background-color: rgba(255, 255, 255, .7);
+    border-radius: 15px;
 }
 .demo--image img
 {
@@ -833,6 +839,10 @@ footer table
         text-align: left;
         list-style: square inside url(assets/icons/Palomita-verde-II.webp);
         list-style-type: style size;
+      }
+      .w3-black
+      {
+          padding: 10px;
       }
 }
 /* Tablet */
